@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hf_base_title_lin"
+    android:layout_width="match_parent"
+    android:background="@color/bill_background"
+    android:layout_height="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:id="@+id/layout_back"
+        android:layout_width="@dimen/three_zero_dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/nav_img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/one_four_dp"
+            android:src="@mipmap/fanhui"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nav_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/layout_back"
+        android:layout_toEndOf="@+id/layout_back" />
+
+    <ImageView
+        android:id="@+id/nav_right_img"
+        android:layout_width="@dimen/one_eight_dp"
+        android:layout_height="@dimen/one_nine_dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/one_four_dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/hf_base_right_lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/hf_base_text_right"
+            style="@style/navigation_title"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/one_four_dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="dfafasf"
+            android:textSize="@dimen/one_four_sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_title"
+        style="@style/navigation_title"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        ></View>
+
+
+</RelativeLayout>

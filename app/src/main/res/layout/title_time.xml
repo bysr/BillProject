@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/title_yellow">
+
+
+        <TextView
+            android:id="@+id/tv_bill_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="08月01号-08月30号"
+            android:textColor="@color/yellow_gray"
+            android:textSize="@dimen/one_eight_sp" />
+
+        <ImageView
+            android:id="@+id/iv_left_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_bill_month"
+            android:paddingRight="@dimen/margin_10dp"
+            android:src="@mipmap/sanjiao1" />
+
+        <ImageView
+            android:id="@+id/iv_right_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_bill_month"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:src="@mipmap/sanjiao2" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

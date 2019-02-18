@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bill_background"
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

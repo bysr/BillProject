@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--图形绘制工具-->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/re_income"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/shouruyuan"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收入"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/one_eight_sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_year_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_income"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="0"
+                android:textColor="@color/text_gray" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/re_expend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/zhichuyuan"
+                android:gravity="center">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支出"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/one_eight_sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_year_expend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_expend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="1923"
+                android:textColor="@color/text_gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/re_count"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/jieyuyuan"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="结余"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/one_eight_sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_year_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_count"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="1923"
+                android:textColor="@color/text_gray" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/gray_line"></View>
+
+</LinearLayout>

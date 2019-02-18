@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bill_background"
+    tools:context="hipad.bill.ui.EditAccountActivity">
+
+
+    <include
+
+        layout="@layout/title_radiogroup"></include>
+    <RelativeLayout
+        android:id="@+id/re_show"
+        android:layout_width="wrap_content"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_centerHorizontal="true"
+        android:background="@color/title_yellow"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/img_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/chihe2" />
+
+
+        <TextView
+            android:id="@+id/tv_bill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/img_bill"
+            android:text="@string/pay"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_eight_sp" />
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/paizhao1" />
+
+
+        <TextView
+            android:id="@+id/tv_bill_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_toLeftOf="@id/img_photo"
+            android:text="0"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/one_eight_sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    <hipad.bill.view.KeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></hipad.bill.view.KeyboardView>
+
+</LinearLayout>

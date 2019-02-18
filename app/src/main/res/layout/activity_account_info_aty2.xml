@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/account"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/two_zero_sp" />
+
+        <TextView
+            android:id="@+id/tv_toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/two_zero_sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/tongji" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_bar_height"
+                android:fitsSystemWindows="true">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                    app:statusBarScrim="@android:color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/bg"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="0.7" />
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tool_bar_height"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin">
+
+
+                        <RelativeLayout
+                            android:id="@+id/re_bill_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                            <TextView
+                                android:id="@+id/tv_bill_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/account"
+                                android:textColor="@color/text_gray_red"
+                                android:textSize="@dimen/one_eight_sp" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_bill_year"
+                                android:layout_centerInParent="true">
+
+                                <TextView
+                                    android:id="@+id/tv_choose_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="7月结余"
+                                    android:textColor="@color/text_red"
+                                    android:textSize="@dimen/two_zero_sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@id/tv_choose_month"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/margin_5dp"
+                                    android:layout_toRightOf="@id/tv_choose_month"
+                                    android:src="@mipmap/xiala" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.Toolbar>
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bill_background"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.mingle.widget.LoadingView
+                android:id="@+id/loadView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.mingle.widget.LoadingView>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/Fab_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:src="@mipmap/tianjia"
+                app:borderWidth="0dp"
+                app:layout_behavior="hipad.bill.view.ScrollAwareBehavior"
+                app:layout_scrollFlags="scroll|enterAlways" />
+        </android.support.design.widget.CoordinatorLayout>
+
+        <include layout="@layout/head_bill_info"></include>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

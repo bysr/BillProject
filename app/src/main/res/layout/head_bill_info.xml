@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_bar_height"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/re_bill_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/tool_bar_height">
+
+        <TextView
+            android:id="@+id/tv_bill_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/account"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/two_five_sp" />
+
+        <TextView
+            android:id="@+id/tv_now_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_count"
+            android:text="7月结余"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/one_eight_sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/tool_bar_height"
+        android:layout_marginBottom="@dimen/margin_30dp">
+
+        <TextView
+            android:id="@+id/tv_bill_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/account"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/two_zero_sp" />
+
+        <TextView
+            android:id="@+id/tv_income_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_income"
+            android:layout_centerHorizontal="true"
+            android:text="7月收入"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/one_four_sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/shuxuxian" />
+
+
+    <RelativeLayout
+        android:id="@+id/re_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/tool_bar_height"
+        android:layout_marginBottom="@dimen/margin_30dp">
+
+        <TextView
+            android:id="@+id/tv_bill_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/account"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/two_zero_sp" />
+
+        <TextView
+            android:id="@+id/tv_expense_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bill_expense"
+            android:layout_centerHorizontal="true"
+            android:text="7月支出"
+            android:textColor="@color/text_gray_red"
+            android:textSize="@dimen/one_four_sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

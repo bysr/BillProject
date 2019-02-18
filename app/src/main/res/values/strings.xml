@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BillProject</string>
+    <string name="edit">编辑</string>
+    <string name="create">新建</string>
+    <string name="choose">请选择</string>
+    <string name="finish">完成</string>
+    <string name="account">账本</string>
+    <string name="account_aa">AA制账本</string>
+    <string name="account_category">请选择新建类型</string>
+    <string name="account_name">账本名称</string>
+    <string name="account_name_a">AA制账本名称</string>
+    <string name="please_account_name">请输入账本名称</string>
+    <string name="pay">工资</string>
+    <string name="eat_drink">吃喝</string>
+    <string name="invest">投资</string>
+    <string name="red_packer">红包</string>
+    <string name="job">兼职</string>
+    <string name="daily_need">日用品</string>
+    <string name="pleasure">娱乐</string>
+    <string name="other">其他</string>
+    <string name="balance">结余</string>
+    <string name="income">收入</string>
+    <string name="expend">支出</string>
+    <string name="loading">加载中...</string>
+
+    <string name="account_statis">流水统计</string>
+    <string name="title_activity_account_month_aty">AccountMonthAty</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_edit_account">EditAccountActivity</string>
+    <string name="account_money">支出:%1$s 收入:%2$s</string>
+    <string name="data_week">%1$s日 星期%2$s</string>
+    <string name="add_remark">添加备注</string>
+    <string name="sure">确定</string>
+
+</resources>

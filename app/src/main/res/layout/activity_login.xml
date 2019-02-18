@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bill_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="hipad.bill.ui.LoginActivity">
+
+    <include layout="@layout/bill_title"></include>
+
+
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></com.mingle.widget.LoadingView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/edit_shape"
+            android:ems="11"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_shape"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_gray"
+            android:textColorHint="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="注册"
+                android:textColor="@color/yellow_gray" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:background="@drawable/btn_drawable"
+            android:text="登录"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

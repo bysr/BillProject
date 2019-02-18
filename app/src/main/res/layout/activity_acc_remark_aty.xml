@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bill_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/bill_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/img_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/chihe2" />
+
+
+        <TextView
+            android:id="@+id/tv_bill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/img_bill"
+            android:text="@string/pay"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_eight_sp" />
+
+
+        <TextView
+            android:id="@+id/tv_bill_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10000"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+    <View style="@style/gray_line"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/shijian" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/img_time"
+            android:text="时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_eight_sp" />
+
+        <TextView
+            android:id="@+id/tv_bill_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2017-07-17 09:10"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_dotted"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?listPreferredItemHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/img_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/beizhu" />
+
+
+        <TextView
+            android:id="@+id/tv_remark_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/img_remark"
+            android:text="备注"
+            android:textColor="@color/black"
+            android:textSize="@dimen/one_eight_sp" />
+
+
+        <ImageView
+            android:id="@+id/img_bill_remark"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/tv_remark_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_toRightOf="@id/tv_remark_text"
+            android:textSize="@dimen/one_eight_sp"
+            android:layout_width="wrap_content"
+            android:lines="1"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            />
+
+
+    </RelativeLayout>
+
+    <View style="@style/gray_line"></View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/four_five_dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/gray_line"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/yellow_gray"
+            android:textSize="@dimen/one_eight_sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
